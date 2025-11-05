@@ -1,20 +1,5 @@
 import math
-# Block 1: Aritmetik (20 övningar)
-# Instruktion: I detta block ska du inte använda input(). Arbeta direkt med tal och variabler i koden.
 # 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 9.  En magisk attack gör 3 upphöjt till 4 i skada. Beräkna och skriv ut hur mycket skada den gör.
-# 10. Ett monster tappar 10 guld och 2 andra fiender tappar 5 guld var. Vad blir 10 + 2  5? Skriv ut resultatet.
-# 11. Två lag, ett med 10 och ett med 2 spelare, får 5 poäng var. Vad blir (10 + 2)  5? Skriv ut resultatet.
-# 12. Du packar din väska. Använd en print()-sats för att skriva ut "Fackla", "Rep" och "Svärd", separerade av ---.
-# 13. Skriv ut en laddningssekvens. Använd två print()-satser för att skriva ut "Analyserar data..." och "Klar!" på samma rad.
-# 14. Din karaktärs magi-poäng (mana) är 80.5. Spara detta i en variabel mana och skriv ut den.
 # 15. Din mana är 80.5. Du kastar en formel som kostar 15.5. Beräkna och skriv ut hur mycket mana du har kvar.
 # 16. Skapa del1 = "Cyber" och del2 = "Punk". Skapa och skriv ut en ny sträng som sätter ihop dem till ett ord.
 # 17. Skapa strängen varningsljud = "Pip! ". Skapa och skriv ut en ny sträng där varningsljudet upprepas 5 gånger.
@@ -76,3 +61,27 @@ exponent = 4
 # print(f"Total skada är {skada}")
 result= int(math.pow(3,4))
 print(f"Total skada är {result}")
+
+#10. Ett monster tappar 10 guld och 2 andra fiender tappar 5 guld var. Vad blir 10 + 2  5? Skriv ut resultatet.
+monster1 = 10
+monster2 = 5*2
+total_guld = monster1+monster2
+print(f"Total guld är : {total_guld}")
+
+#11. Två lag, ett med 10 och ett med 2 spelare, får 5 poäng var. Vad blir (10 + 2)  5? Skriv ut resultatet.
+antal_spelare = 10+2
+poäng_spelare = 5
+total_poäng = antal_spelare*poäng_spelare
+print(f"Total poäng är: {total_poäng}")
+
+# 12. Du packar din väska. Använd en print()-sats för att skriva ut "Fackla", "Rep" och "Svärd", separerade av ---.
+string = "Fackla---Rep---Svärd"
+print(string)
+
+# 13. Skriv ut en laddningssekvens. Använd två print()-satser för att skriva ut "Analyserar data..." och "Klar!" på samma rad.
+print("Analyserar data...",end=" ")
+print("Klar!")
+
+#14. Din karaktärs magi-poäng (mana) är 80.5. Spara detta i en variabel mana och skriv ut den.
+mana = 80.5
+print(mana)
