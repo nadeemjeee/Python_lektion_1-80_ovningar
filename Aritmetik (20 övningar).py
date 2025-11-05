@@ -60,3 +60,7 @@ guld_mynt_pirater = (guld_mynt/antal_pirater)
 print(f"Varje Pirat får : {guld_mynt_pirater:.2f} guldmynt")
 
 #7.  25 magiska bönor ska delas lika mellan 7 trollkarlar. Hur många hela bönor får varje trollkarl? Skriv ut antalet.
+antal_bönor = 25
+antal_trollkarlar = 7
+bönor_trollkarlar = (antal_bönor/antal_trollkarlar)
+print(f"Varje trollkarlar får: {int(bönor_trollkarlar)} bönor")
