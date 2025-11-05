@@ -1,13 +1,11 @@
 import math
 # 
-# 15. Din mana är 80.5. Du kastar en formel som kostar 15.5. Beräkna och skriv ut hur mycket mana du har kvar.
-# 16. Skapa del1 = "Cyber" och del2 = "Punk". Skapa och skriv ut en ny sträng som sätter ihop dem till ett ord.
-# 17. Skapa strängen varningsljud = "Pip! ". Skapa och skriv ut en ny sträng där varningsljudet upprepas 5 gånger.
-# 18. 160 rymd-marinsoldater ska sova i kapslar som rymmer 7 personer var. Skriv ett program som skriver ut:
-# 1.  Antal fulla kapslar.
-# 2.  Antal soldater som blir över.
+
+
+
+
 # 19. Ett rymdskepp kostar 5000.0 krediter. Beräkna och skriv ut priset efter en prisökning på 10% (dvs. multiplicera med 1.10).
-# 20. Använd en print()-sats för att rapportera din status: "Level:", 5, "och HP:", 100.
+
 
 #1.  Skriv ett program som skriver ut texten "Välkommen, krigare!".
 text = "Välkommen, krigare!"
@@ -83,5 +81,41 @@ print("Analyserar data...",end=" ")
 print("Klar!")
 
 #14. Din karaktärs magi-poäng (mana) är 80.5. Spara detta i en variabel mana och skriv ut den.
+## 15. Din mana är 80.5. Du kastar en formel som kostar 15.5. Beräkna och skriv ut hur mycket mana du har kvar.
 mana = 80.5
 print(mana)
+kostar_kasta = 15.5
+mana_kvar= mana-kostar_kasta
+print(f"Du har {mana_kvar} mana")
+
+## 16. Skapa del1 = "Cyber" och del2 = "Punk". Skapa och skriv ut en ny sträng som sätter ihop dem till ett ord.
+del1 = "cyber"
+del2 = "Punk"
+print(del1.capitalize()+del2.lower())
+
+## 17. Skapa strängen varningsljud = "Pip! ". Skapa och skriv ut en ny sträng där varningsljudet upprepas 5 gånger.
+varningsljud = "Pip! "
+ny_string = varningsljud*5
+print(ny_string)
+
+## 18. 160 rymd-marinsoldater ska sova i kapslar som rymmer 7 personer var. Skriv ett program som skriver ut:
+# 1.  Antal fulla kapslar.
+# 2.  Antal soldater som blir över.
+antal_marinsoldator = 160
+antal_per_kapsul = 7
+total_full_kapslar = 160/7
+antal_soldator_över = 160%7
+print(f"Antal fulla kapslar: {int(total_full_kapslar)}")
+print(f"Antal soldater som blir över: {antal_soldator_över}")
+
+## 19. Ett rymdskepp kostar 5000.0 krediter. Beräkna och skriv ut priset efter en prisökning på 10% (dvs. multiplicera med 1.10).
+rymdskepp_kostar=5000.0
+pris_ökning = 1.10
+ny_pris = rymdskepp_kostar*pris_ökning
+print(ny_pris)
+
+## 20. Använd en print()-sats för att rapportera din status: "Level:", 5, "och HP:", 100.
+level = 5
+hp = 100
+print(f"Level: {level} och HP:{hp}")
+
