@@ -1,3 +1,4 @@
+import math
 # Block 1: Aritmetik (20 övningar)
 # Instruktion: I detta block ska du inte använda input(). Arbeta direkt med tal och variabler i koden.
 # 
@@ -7,7 +8,7 @@
 # 
 # 
 # 
-# 8.  Om 25 bönor delas mellan 7 trollkarlar, hur många bönor blir över till dig? Skriv ut antalet.
+# 
 # 9.  En magisk attack gör 3 upphöjt till 4 i skada. Beräkna och skriv ut hur mycket skada den gör.
 # 10. Ett monster tappar 10 guld och 2 andra fiender tappar 5 guld var. Vad blir 10 + 2  5? Skriv ut resultatet.
 # 11. Två lag, ett med 10 och ett med 2 spelare, får 5 poäng var. Vad blir (10 + 2)  5? Skriv ut resultatet.
@@ -60,7 +61,18 @@ guld_mynt_pirater = (guld_mynt/antal_pirater)
 print(f"Varje Pirat får : {guld_mynt_pirater:.2f} guldmynt")
 
 #7.  25 magiska bönor ska delas lika mellan 7 trollkarlar. Hur många hela bönor får varje trollkarl? Skriv ut antalet.
+#8.  Om 25 bönor delas mellan 7 trollkarlar, hur många bönor blir över till dig? Skriv ut antalet.
 antal_bönor = 25
 antal_trollkarlar = 7
 bönor_trollkarlar = (antal_bönor/antal_trollkarlar)
+restande_bönor= antal_bönor%antal_trollkarlar
 print(f"Varje trollkarlar får: {int(bönor_trollkarlar)} bönor")
+print(f"Restande trokklarlar är: {restande_bönor}")
+
+#9.  En magisk attack gör 3 upphöjt till 4 i skada. Beräkna och skriv ut hur mycket skada den gör.
+bas = 3
+exponent = 4
+# skada = 3**4 # (**: to calculate the base function)
+# print(f"Total skada är {skada}")
+result= int(math.pow(3,4))
+print(f"Total skada är {result}")
