@@ -2,9 +2,9 @@
 # Instruktion: Nu introducerar vi if, elif, else och typkonvertering (int(), float()).
 
 
-# 11. Fråga om du har en "Guldnyckel" (ja/nej) eller en "Dyrk" (ja/nej). Om du har nyckel ("ja") ELLER dyrk ("ja"), skriv "Du lyckas öppna kistan!".
-# 12. Skapa en variabel är_förbannad = True. Om karaktären inte är förbannad, skriv "Dina attacker gör normal skada.". Annars, skriv "Dina attacker är svagare!".
-# 13. Fråga användaren efter deras namn. Om de skrev in ett namn (dvs. strängen inte är tom), skriv ut "Hej, [namn]!".
+
+
+
 # 14. Fråga användaren efter deras namn. Om de inte skrev in något (dvs. strängen är tom), skriv ut "Du måste ange ett namn för att spara spelet!".
 # 15. Fråga hur många liv användaren har (som ett tal). Om antalet liv är 0, skriv ut "Game Over".
 # 16. Skapa förbjudna_föremål = "kniv bomb". Fråga vad användaren har i väskan. Om "bomb" finns i svaret, skriv "Säkerhetskontroll! Du stoppas!".
@@ -132,17 +132,42 @@
 
 # 10. Fråga efter ålder (som tal) och om de har en biljett (som text, "ja" eller "nej"). Om personen är över 17 OCH har en biljett ("ja"), skriv "Välkommen in på konserten!".
 
+# while True:
+#     try:
+#         age = int(input("what is your age: "))
+#         ticket = input("Do u have ticket (Yes/No)")
+#         if age >17 and ticket.lower() == "yes":
+#             print("Välkommen in på konserten!")
+#             break
+#         else:
+#             print("You are not allowed")
+#             break
+#     except ValueError:
+#         print("Enter digit only")
+
+# 11. Fråga om du har en "Guldnyckel" (ja/nej) eller en "Dyrk" (ja/nej). Om du har nyckel ("ja") ELLER dyrk ("ja"), skriv "Du lyckas öppna kistan!".
+# guldnyckel = input("Om du har en Guldnyckel (ja/nej): ")
+# dyrk = input("Om du har en Dyrk (ja/nej): ")
+# if guldnyckel.lower() == "ja" or dyrk.lower()== "ja":
+#     print("Du lyckas öppna kistan!")
+# else:
+#     print("Du måste ha nyckel")
+
+# 12. Skapa en variabel är_förbannad = True. Om karaktären inte är förbannad, skriv "Dina attacker gör normal skada.". Annars, skriv "Dina attacker är svagare!".
+# är_förbannad = True
+
+# if är_förbannad != True:
+#     print("Dina attacker gör normal skada.")
+# else:
+#     print("Dina attacker är svagare!")
+
+# 13. Fråga användaren efter deras namn. Om de skrev in ett namn (dvs. strängen inte är tom), skriv ut "Hej, [namn]!".
 while True:
-    try:
-        age = int(input("what is your age: "))
-        ticket = input("Do u have ticket (Yes/No)")
-        if age >17 and ticket.lower() == "yes":
-            print("Välkommen in på konserten!")
-            break
-        else:
-            print("You are not allowed")
-            break
-    except ValueError:
-        print("Enter digit only")
-    
+    name = input("Enter your name: ")
+    if name.strip() != "":
+        print(f"Your name is {name.capitalize()}")
+        break
+    else:
+        print("Enter Your name please!")
+
                   
