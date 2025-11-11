@@ -2,21 +2,6 @@
 # Instruktion: Nu introducerar vi if, elif, else och typkonvertering (int(), float()).
 
 
-
-
-
-# 14. Fråga användaren efter deras namn. Om de inte skrev in något (dvs. strängen är tom), skriv ut "Du måste ange ett namn för att spara spelet!".
-# 15. Fråga hur många liv användaren har (som ett tal). Om antalet liv är 0, skriv ut "Game Over".
-# 16. Skapa förbjudna_föremål = "kniv bomb". Fråga vad användaren har i väskan. Om "bomb" finns i svaret, skriv "Säkerhetskontroll! Du stoppas!".
-# 17. Fråga användaren om ett postnummer (som text). Kontrollera om inmatningen endast består av siffror. Om ja, skriv "Giltigt format.".
-# 18. Fråga användaren om deras förnamn (som text). Kontrollera om inmatningen endast består av bokstäver. Om den inte gör det, skriv "Ett namn får inte innehålla siffror eller symboler.".
-# 19. Fråga efter ett lösenord (som text). Om lösenordet är kortare än 8 tecken, skriv "Lösenordet är för kort! Minst 8 tecken krävs.".
-# 20. Fråga "Vad väljer du? (attack/försvar/magi)".
-# • Om valet är "attack", skriv "Du svingar ditt svärd!".
-# • Om valet är "försvar", skriv "Du höjer din sköld!".
-# • Om valet är "magi", skriv "Du kastar en formel!".
-# • Annars, skriv "Ogiltigt val."
-
 # 1.  Fråga användaren "Hur många bananer har du?". Konvertera svaret till ett heltal och spara i en variabel.
 # while True:
 #     try:
@@ -162,12 +147,104 @@
 #     print("Dina attacker är svagare!")
 
 # 13. Fråga användaren efter deras namn. Om de skrev in ett namn (dvs. strängen inte är tom), skriv ut "Hej, [namn]!".
+# while True:
+#     name = input("Enter your name: ")
+#     if name.strip() != "":
+#         print(f"Your name is {name.capitalize()}")
+#         break
+#     else:
+#         print("Enter Your name please!")
+
+# 14. Fråga användaren efter deras namn. Om de inte skrev in något (dvs. strängen är tom), skriv ut "Du måste ange ett namn för att spara spelet!".
+# while True:
+#     name = input("Enter your name: ")
+#     if name.strip() == "":
+#         print("Du måste ange ett namn för att spara spelet!")       
+#     else:
+#         print("Spelet är sparat")
+#         break
+# 15. Fråga hur många liv användaren har (som ett tal). Om antalet liv är 0, skriv ut "Game Over".
+                  
+# while True:
+#     try:
+#         lives = int(input("How many lives are u left: "))
+#         if lives <0:
+#             print("please enter a positve number")
+#         elif lives ==0:
+#             print("Game Over")
+#             break
+#         else:
+#             print("Continue playing")
+#     except ValueError:
+#         print("Print only digit(in postive)")
+# while True:
+#         try:
+#             name = input("Give ur name: ")  
+#             if not name.isalpha():
+#                 raise ValueError ("numbers not allowed")
+#             print(f"Your name is {name}")
+#             break 
+#         except ValueError as e:
+#              print(e)
+# 16. Skapa förbjudna_föremål = "kniv bomb". Fråga vad användaren har i väskan. Om "bomb" finns i svaret, skriv "Säkerhetskontroll! Du stoppas!".
+# förbjudna_föremål = "kniv bomb"
+# svar = input("vad har du i väskan: ")
+# if "bomb" in svar.lower():
+#     print("Säkerhetskontroll! Du stoppas!")
+# else:
+#     print("Du kan kooma in")
+
+# 17. Fråga användaren om ett postnummer (som text). Kontrollera om inmatningen endast består av siffror. Om ja, skriv "Giltigt format.".
+# while True:
+    
+#     postnumber = (input("what is ur post number: "))
+#     if postnumber.isdigit():
+#         print("Giltigt format.", end= " ")
+#         print(f"Your post number is: {postnumber}")
+#         break
+#     else:
+#         print("Invalid: try again")
+
+# 18. Fråga användaren om deras förnamn (som text). Kontrollera om inmatningen endast består av bokstäver. Om den inte gör det, skriv "Ett namn får inte innehålla siffror eller symboler.".
+# while True:
+#     first_name = input("What is your name:")   
+#     if first_name.isalpha():
+#         print(f"Your first name is : {first_name.capitalize()}")
+#         break
+#     else:
+#         print("Ett namn får inte innehålla siffror eller symboler.")
+# 19. Fråga efter ett lösenord (som text). Om lösenordet är kortare än 8 tecken, skriv "Lösenordet är för kort! Minst 8 tecken krävs.".
+# while True:
+#     password = input("Enter your password (only text, 8 characters): ")
+
+#     if len(password) < 8:
+#         print("Lösenordet är för kort! Minst 8 tecken krävs.")
+#     elif not password.isalpha():
+#         print("Only text")
+#     else:
+#         print("Your password is accepted.")
+#         break
+#20. Fråga "Vad väljer du? (attack/försvar/magi)".
+# • Om valet är "attack", skriv "Du svingar ditt svärd!".
+# • Om valet är "försvar", skriv "Du höjer din sköld!".
+# • Om valet är "magi", skriv "Du kastar en formel!".
+# • Annars, skriv "Ogiltigt val."
 while True:
-    name = input("Enter your name: ")
-    if name.strip() != "":
-        print(f"Your name is {name.capitalize()}")
+    print("\n====Give your choice===")
+    print("1) Attack")
+    print("2) försvar")
+    print("3) magi")
+
+    choice = input("Give your choice- 1/2/3: ").strip()
+    if choice == "1":
+        print("\nDu svingar ditt svärd!")
+        break
+    elif choice =="2":
+        print("\nDu höjer din sköld!")
+        break
+    elif choice =="3":
+        print("\nDu kastar en formel!")
         break
     else:
-        print("Enter Your name please!")
+        print("\nOgiltigt val.")
 
-                  
