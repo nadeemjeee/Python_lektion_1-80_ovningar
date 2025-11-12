@@ -151,10 +151,24 @@ magi = 20
 #         print(f"Room{r}")
 
 # 20. Skapa ett gissningsspel. Fråga "Gissa mitt favorittal (1-10):". Så länge svaret (som ett tal) inte är 7, skriv "Fel, gissa igen!". Om det är 7, skriv "Rätt!" och avbryt loopen.
-guess = int(input("Guess my number(1-10): "))
-while guess !=7:
-    guess = int (input("Fel, guess again!: "))
-print("Right")
+# guess = int(input("Guess my number(1-10): "))
+# while guess !=7:
+#     guess = int (input("Fel, guess again!: "))
+# print("Right")
+
+# or
+while True:
+    try:
+        guess = int(input("Guess my number(1-10): "))
+        if guess !=7:
+            print("Fel, guess again!")
+        else:
+            print("Bravo")
+            break
+    except ValueError:
+        print("Only digits")
+
+
 
 
 
