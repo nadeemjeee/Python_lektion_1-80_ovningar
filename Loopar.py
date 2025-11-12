@@ -1,25 +1,5 @@
 # Block 4: Loopar (20 övningar)
 # Instruktion: Nu introducerar vi for, while, range och break.
-#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 16. Skapa monster_besegrat = False. Skriv en while-loop som kör så länge monstret inte är besegrat. Inuti, fråga "Attackera? (ja/nej)". Om "ja", skriv "Du vann!" och se till att loopen avslutas.
-# 17. Du samlar poäng. Skapa total_poäng = 0. Loopa 5 gånger. Varje gång, lägg till 10 poäng till total_poäng. Efter loopen, skriv ut den totala poängen.
-# 18. Fråga "Ange ett positivt tal:". Så länge talet (konverterat till ett heltal) är mindre än 0 (dvs. negativt), fortsätt att fråga "Inte negativt! Försök igen:".
-# 19. Du har 3 våningar på ett hotell. Loopa 3 gånger. Inuti den loopen, ha en till loop som kör 2 gånger och skriver ut "Rum". Skriv ut "Våning" i den yttre loopen.
-# 20. Skapa ett gissningsspel. Fråga "Gissa mitt favorittal (1-10):". Så länge svaret (som ett tal) inte är 7, skriv "Fel, gissa igen!". Om det är 7, skriv "Rätt!" och avbryt loopen.
 
 # 1.  En trollkarl kastar en formel 5 gånger. Använd en loop för att skriva ut "Abracadabra!" 5 gånger.
 # for i in range(1,6):
@@ -131,17 +111,51 @@ magi = 20
 #     svar = input("Är du redo att starta spelet? ")
 
 # 15. Fråga användaren om ett ord. Loopa över varje bokstav. Om en bokstav är 'a', skriv "Hittade ett 'a'!".
-word = ""
-word = input("Give ur word: ")
-while "a" in word.lower():
-    print("Hittade ett 'a'!")
-    break
-# or 
-word = input("Ge ditt ord: ")
+# word = ""
+# word = input("Give ur word: ")
+# while "a" in word.lower():
+#     print("Hittade ett 'a'!")
+#     break
+# # or 
+# word = input("Ge ditt ord: ")
+# for bokstav in word.lower():
+#     if bokstav == "a":
+#         print("Hittade ett 'a'!")
 
-for bokstav in word.lower():
-    if bokstav == "a":
-        print("Hittade ett 'a'!")
+# 16. Skapa monster_besegrat = False. Skriv en while-loop som kör så länge monstret inte är besegrat. 
+# Inuti, fråga "Attackera? (ja/nej)". Om "ja", skriv "Du vann!" och se till att loopen avslutas.
+# monster_besegrat = False
+# while not monster_besegrat:
+#     attack = input("Attackera? (ja/nej) ").lower().strip()
+#     if attack == "ja":
+#         print("You win")
+#         monster_besegrat=True
+
+# 17. Du samlar poäng. Skapa total_poäng = 0. Loopa 5 gånger. Varje gång, lägg till 10 poäng till 
+# total_poäng. Efter loopen, skriv ut den totala poängen.
+# total_poäng = 0
+# for i in range(1,6):
+#     total_poäng +=10
+# print(f"total poäng är:{total_poäng}")
+
+# 18. Fråga "Ange ett positivt tal:". Så länge talet (konverterat till ett heltal) är mindre än 0 (dvs. negativt), fortsätt att fråga "Inte negativt! Försök igen:".
+# tal = int(input("Ange ett positivt tal: "))
+# while tal<0:
+#     tal = int(input("Inte negativt! Försök igen:"))
+# print("Bra jobbat")
+
+# 19. Du har 3 våningar på ett hotell. Loopa 3 gånger. Inuti den loopen, ha en till loop som kör 2 gånger och skriver ut "Rum". Skriv ut "Våning" i den yttre loopen.
+# for v in range (1,4):
+#     print(f"Våning{v}")
+#     for r in range(1,3):
+#         print(f"Room{r}")
+
+# 20. Skapa ett gissningsspel. Fråga "Gissa mitt favorittal (1-10):". Så länge svaret (som ett tal) inte är 7, skriv "Fel, gissa igen!". Om det är 7, skriv "Rätt!" och avbryt loopen.
+guess = int(input("Guess my number(1-10): "))
+while guess !=7:
+    guess = int (input("Fel, guess again!: "))
+print("Right")
+
 
 
 
