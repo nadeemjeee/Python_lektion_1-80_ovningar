@@ -12,9 +12,9 @@
 
 
 
-# 13. En bomb-timer räknar ner. Använd en loop för att skriva ut "5 4 3 2 1" (allt på samma rad, separerat av mellanslag).
-# 14. Skapa en tom sträng svar = "". Så länge "ja" inte finns i svaret (oavsett versaler), fråga "Är du redo att starta spelet?".
-# 15. Fråga användaren om ett ord. Loopa över varje bokstav. Om en bokstav är 'a', skriv "Hittade ett 'a'!".
+
+
+
 # 16. Skapa monster_besegrat = False. Skriv en while-loop som kör så länge monstret inte är besegrat. Inuti, fråga "Attackera? (ja/nej)". Om "ja", skriv "Du vann!" och se till att loopen avslutas.
 # 17. Du samlar poäng. Skapa total_poäng = 0. Loopa 5 gånger. Varje gång, lägg till 10 poäng till total_poäng. Efter loopen, skriv ut den totala poängen.
 # 18. Fråga "Ange ett positivt tal:". Så länge talet (konverterat till ett heltal) är mindre än 0 (dvs. negativt), fortsätt att fråga "Inte negativt! Försök igen:".
@@ -110,16 +110,38 @@ magi = 20
 #         print("Your password is accepted") 
 #         break
 # 12. Skapa schema = "måndag tisdag onsdag". Dela upp strängen vid mellanslag och använd en loop för att skriva ut varje dag på en ny rad.
-schema = "måndag tisdag onsdag"
-days = schema.split()
-for d in days:
-    print(d)
+# schema = "måndag tisdag onsdag"
+# days = schema.split()
+# for d in days:
+#     print(d)
 
+# # or 
+# schema = "måndag tisdag onsdag"
+# days = schema.split()
+# for i, d in enumerate (days, start=1):
+#     print (f"{i}.{d}")
+
+# 13. En bomb-timer räknar ner. Använd en loop för att skriva ut "5 4 3 2 1" (allt på samma rad, separerat av mellanslag).
+# for i in range (5,0,-1):
+#     print(i,end=" ")
+
+# 14. Skapa en tom sträng svar = "". Så länge "ja" inte finns i svaret (oavsett versaler), fråga "Är du redo att starta spelet?".
+# svar = ""
+# while "ja" not in svar.lower():
+#     svar = input("Är du redo att starta spelet? ")
+
+# 15. Fråga användaren om ett ord. Loopa över varje bokstav. Om en bokstav är 'a', skriv "Hittade ett 'a'!".
+word = ""
+word = input("Give ur word: ")
+while "a" in word.lower():
+    print("Hittade ett 'a'!")
+    break
 # or 
-schema = "måndag tisdag onsdag"
-days = schema.split()
-for i, d in enumerate (days, start=1):
-    print (f"{i}.{d}")
+word = input("Ge ditt ord: ")
+
+for bokstav in word.lower():
+    if bokstav == "a":
+        print("Hittade ett 'a'!")
 
 
 
